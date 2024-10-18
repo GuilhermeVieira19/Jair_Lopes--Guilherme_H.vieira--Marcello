@@ -8,6 +8,6 @@ Integrantes do grupo:
 
 -Jair Lopes
 
--Luigy
+-Luidy Vieira
 
 Trabalho avaliativo ministrado pelo Prof. Richard referente a disciplina de Técnicas de Programação do curso TADS da faculdade AEMS.
