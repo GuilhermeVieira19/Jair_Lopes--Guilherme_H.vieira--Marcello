@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Página do Baú</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Você encontrou um baú!</h1>
+    <p>O que você deseja fazer?</p>
+    {% if resultado %}
+        <p>{{ resultado }}</p>
+    {% endif %}
+    <form method="post">
+        <button type="submit" name="escolha" value="abrir">Abrir o Baú</button>
+        <button type="submit" name="escolha" value="voltar">Voltar para o Menu</button>
+    </form>
+</body>
+</html>
