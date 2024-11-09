@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Menu Principal</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>Menu Principal</h1>
+    <form method="post">
+      <div class="opcoes">
+        <button type="submit" name="escolha" value="pousada">Ir para a Pousada</button>
+        <button type="submit" name="escolha" value="caverna">Ir para a Caverna</button>
+      </div>
+    </form>
+
+    <div class="ficha">
+      <h2>Ficha do Personagem</h2>
+      <p><strong>Nome:</strong> {{ personagem.nome }}</p>
+      <p><strong>Raça:</strong> {{ personagem.raca }}</p>
+      <p><strong>Classe:</strong> {{ personagem.classe }}</p>
+      <p><strong>Nível:</strong> {{ personagem.nivel }}</p>
+      <p><strong>Experiência:</strong> {{ personagem.experiencia }}</p>
+      <h3>Atributos</h3>
+      <ul>
+        <li><strong>Força:</strong> {{ personagem.atributos.forca }}</li>
+        <li><strong>Agilidade:</strong> {{ personagem.atributos.agilidade }}</li>
+        <li><strong>Inteligência:</strong> {{ personagem.atributos.inteligencia }}</li>
+        <li><strong>Carisma:</strong> {{ personagem.atributos.carisma }}</li>
+        <li><strong>Sabedoria:</strong> {{ personagem.atributos.sabedoria }}</li>
+      </ul>
+      <h3>Status</h3>
+      <ul>
+        <li><strong>Ataque:</strong> {{ personagem.status.ataque }}</li>
+        <li><strong>Defesa:</strong> {{ personagem.status.defesa }}</li>
+        <li><strong>Vida:</strong> {{ personagem.status.vida }} / {{ personagem.status.vida_max }}</li>
+        <li><strong>Esquiva:</strong> {{ personagem.status.esquiva }}</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
