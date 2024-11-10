@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Ficha de Personagem</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+  <div class="ficha">
+    {% if not encerrar %}
+    <h2>Criação de Personagem</h2>
+    <form method="POST">
+      <label for="nome">Nome do Personagem:</label>
+      <input type="text" name="nome" id="nome" required>
+      <button type="submit">Confirmar</button>
+    </form>
+    {% else %}
+    <h2>Ficha de Personagem</h2>
+    <p><strong>Nome:</strong> {{ personagem.nome }}</p>
+    <p><strong>Raça:</strong> {{ personagem.raca }}</p>
+    <p><strong>Classe:</strong> {{ personagem.classe }}</p>
+    <p><strong>Nível:</strong> {{ personagem.nivel }}</p>
+    <p><strong>Experiência:</strong> {{ personagem.experiencia }}</p> 
+    <h3>Atributos</h3>
+    <ul>
+      <li>Força: {{ personagem.atributos.forca }}</li>
+      <li>Agilidade: {{ personagem.atributos.agilidade }}</li>
+      <li>Inteligência: {{ personagem.atributos.inteligencia }}</li>
+      <li>Carisma: {{ personagem.atributos.carisma }}</li>
+      <li>Sabedoria: {{ personagem.atributos.sabedoria }}</li>
+    </ul>
+    {% if encerrar %}
+    <p class="mensage-finalizada">Jogo encerrado. Até a próxima!</p>
+    {% endif %}
+    {% endif %}
+  </div>
+</body>
+
+</html>
