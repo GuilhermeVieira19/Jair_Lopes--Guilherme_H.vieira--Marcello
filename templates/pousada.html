@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
   <meta charset="UTF-8">
   <title>Pousada</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
-
 <body>
   <div class="container">
     <h1>Bem-vindo à Pousada</h1>
-    <p class="mensagem-fim">Parabéns! Você alcançou a segurança da pousada. Aqui termina sua jornada por hoje.</p>
+    <p class="mensagem-fim">
+      {{ resultado.texto | safe }}
+    </p>
 
     <div class="ficha">
       <h2>Ficha do Personagem</h2>
@@ -37,5 +37,4 @@
     </div>
   </div>
 </body>
-
 </html>
