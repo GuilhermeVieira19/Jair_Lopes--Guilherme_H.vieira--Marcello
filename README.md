@@ -22,7 +22,7 @@ Como rodar o projeto
 -Instalar as dependências:
 
 -Windows: pip install flask
--inux: pip install flask
+-Linux: pip install flask
 
 -Rodar o projeto: python app.py
 
