@@ -33,6 +33,9 @@ Criar uma nova branch: git checkout -b feature/nome-da-branch
 Atualizar o projeto: git pull
 
 Adicionar as alterações:
+
 git add .
+
 git commit -m "mensagem-do-commit"
+
 git push
