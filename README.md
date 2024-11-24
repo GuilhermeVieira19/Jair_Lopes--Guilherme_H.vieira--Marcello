@@ -8,9 +8,31 @@ Integrantes do grupo:
 
 -Jair Lopes
 
-passo a passo para execução do projeto
-puxar o projeto para o compilador
-Iniciar o jogo pelo compilador colocando para rodar
-Iniciando ele dará um link, clicando no link será redirecinado para a pagina criada para que possa jogar o RPG
-
 Trabalho avaliativo ministrado pelo Prof. Richard referente a disciplina de Técnicas de Programação do curso TADS da faculdade AEMS.
+
+Como rodar o projeto
+
+-criar um ambiente virtual: python -m venv .venv
+
+-Ativar o ambiente virtual:
+
+-Windows: .venv\Scripts\activate
+-Linux: source .venv/bin/activate
+
+-Instalar as dependências:
+
+-Windows: pip install flask
+-inux: pip install flask
+
+-Rodar o projeto: python app.py
+
+Auxiliar
+
+Clonar o projeto: git clone https://github.com/GuilhermeVieira19/Jair_Lopes--Guilherme_H.vieira--Marcello a. Atualizar Branch: git pull
+Criar uma nova branch: git checkout -b feature/nome-da-branch
+Atualizar o projeto: git pull
+
+Adicionar as alterações:
+git add .
+git commit -m "mensagem-do-commit"
+git push
