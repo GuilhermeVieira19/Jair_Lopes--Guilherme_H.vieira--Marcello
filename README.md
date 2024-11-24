@@ -17,11 +17,13 @@ Como rodar o projeto
 -Ativar o ambiente virtual:
 
 -Windows: .venv\Scripts\activate
+
 -Linux: source .venv/bin/activate
 
 -Instalar as dependências:
 
 -Windows: pip install flask
+
 -Linux: pip install flask
 
 -Rodar o projeto: python app.py
@@ -29,7 +31,9 @@ Como rodar o projeto
 Auxiliar
 
 Clonar o projeto: git clone https://github.com/GuilhermeVieira19/Jair_Lopes--Guilherme_H.vieira--Marcello a. Atualizar Branch: git pull
+
 Criar uma nova branch: git checkout -b feature/nome-da-branch
+
 Atualizar o projeto: git pull
 
 Adicionar as alterações:
